@@ -1,0 +1,27 @@
+<ion-modal-view style="background: url(img/logi.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content>
+    <br><br><br>
+    <div class="hero no-header flat">
+            <div class="content">
+            </div>
+        </div>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+    <form ng-submit="vm.doLogin()">
+      <div class="list">
+          <center><input type="email" ng-model="vm.loginData.email" placeholder="Username"></center><br>
+          <center><input type="password" ng-model="vm.loginData.password" placeholder="Password"></center><br>
+          <center><button class="button button-block button-assertive" id="sub" type="submit">Log in</button></center>
+        <br>
+        <center><a href="#/app/signup" ng-click="vm.goToRegister()">Not a User? Register Here..</a></center><br>
+      </div>
+    </form>
+    <center><a href="#/app/scan"<img src="img/qr.png" width="250px" alt="" /></a></center>
+  </ion-content>
+</ion-modal-view>

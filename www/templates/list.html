@@ -1,0 +1,19 @@
+<ion-view view-title="List" style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content><br>
+  <div>
+    <div ng-repeat="list_item in list_items">
+      <div>
+        <img class="full-image" src={{list_item.image_name}}>
+        <center><p>{{list_item.cat_name}}</p></center>
+          <div class="add_cart">
+          <ion-checkbox class="checkbox-positive" ng-click="clicked(list_item.cat_id)">Add to Cart</ion-checkbox><br>
+          </div>
+
+  </div>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>

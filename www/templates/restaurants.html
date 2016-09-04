@@ -1,0 +1,14 @@
+<ion-view view-title="Restaurants" class="pane" style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content>
+  <div ng-repeat="restaurant in restaurants">
+  <div ng-click="vm.openRestaurant({{restaurant.rest_id}})">
+    <img class="full-image" src={{restaurant.img_id}}>
+    <strong><center><p>{{restaurant.rest_name}}</p></center></strong>
+    <p>{{restaurant.description}}</p><br>
+  </div>
+</div>
+</ion-content>
+</ion-view>

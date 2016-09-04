@@ -1,0 +1,29 @@
+<ion-modal-view style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content><br><br>
+    {{object.code}}
+    <br>
+
+    <div class="list card">
+      <div ng-repeat="list_item in cart_items">
+          <div class="item item-body" style="color: black">
+            {{list_item.item_name}}
+            <div class="cost1">
+              Rs.{{list_item.cost}}
+            </div><br>
+          </div>
+          </div>
+        </div>
+        <center><p>
+        Total : Rs {{total}}<br>
+        Tax : Rs {{tax}}<br>
+        Bill : Rs {{bill}}</p>
+      </center>
+        <br><br>
+        <center><button class="button button-positive" ng-click="proceed_payment()">
+          Proceed to Pay
+      </button></center>
+  </ion-content>
+</ion-modal-view>

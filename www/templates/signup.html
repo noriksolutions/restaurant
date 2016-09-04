@@ -1,0 +1,27 @@
+<ion-modal-view style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content>
+    <br><br><br><br>
+    <div class="hero no-header flat">
+      <div class="content">
+        <center><img src="img/logo.png" width="180px" height="180px" alt="" /></center>
+          <br><br>
+      </div>
+    </div>
+    <form ng-submit="vm.doSignUp()">
+      <div class="list">
+           <center><input type="text" ng-model="vm.object.name" placeholder="Fullname"></center><br>
+           <center><input type="email" ng-model="vm.object.email" placeholder="Email"></center><br>
+           <center><input type="password" ng-model="vm.object.password" placeholder="Password"></center><br>
+           <center><input type="number" ng-model="vm.object.phoneno" placeholder="Mobile"></center><br>
+           <center><input type="number" ng-model="vm.object.landline" placeholder="Landline"></center><br>
+           <center><input type="text" ng-model="vm.object.address" placeholder="Address"></center><br>
+           <ion-checkbox ng-model="all"><a href="#">Accepting Terms and Conditions</a></ion-checkbox><br>
+          <center><button class="button button-block button-assertive" type="submit" id="sub" >Sign Up</button></center>
+            <center><a href="#/app/signin" ng-click="vm.goToLogin()">Already a User? Login Here..</a></center><br><br>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,18 @@
+<ion-view view-title="Your Cart" style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content><br>
+    <div class="list card">
+    <div ng-repeat="list_item in list_items">
+      <div class="item item-body">
+        <img class="full-image" src={{list_item.image_name}}>
+        <p><center>{{list_item.cat_name}}</center>
+      </p>
+      </div>
+    </div>
+    </div>
+    <!--<center><h2>Total Cost : </h2></center>
+    {{total_cost}}-->
+  </ion-content>
+</ion-view>

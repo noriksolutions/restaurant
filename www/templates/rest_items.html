@@ -1,0 +1,26 @@
+<ion-view view-title="Restaurant Items" style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content><br>
+        <div>
+    <div ng-repeat="item_det in list_dets">
+      <div ng-click="select_item(item_det.item_id)">
+        <img class="full-image" src={{item_det.url}}>
+        <center><p>{{item_det.item_name}}    </p></center>
+          <div class="cost">  <p>Cost: {{item_det.cost}}</p>
+          </div>
+          <div class="rating">
+          <p>Rating: {{item_det.rating}}</p></div>
+          <div class="cost">
+            <p>Type: {{item_det.status}}</p>
+          </div>
+          <div class="add_cart">
+          <ion-checkbox class="checkbox-positive" ng-click="item_clicked(item_det.item_id)">Add to Cart</ion-checkbox><br>
+          </div>
+      </div>
+    </div>
+    </div>
+    <br><br><br><br>
+  </ion-content>
+</ion-view>

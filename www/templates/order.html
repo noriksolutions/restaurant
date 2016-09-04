@@ -1,0 +1,17 @@
+<ion-view view-title="Order Destination" style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content><br>
+    <center><p>Address</p></center>
+  <div class="list" id="details">
+      <input type="text" placeholder="FirstName" ng-model="vm.object.name">
+      <input type="email" placeholder="Email" ng-model="vm.object.email" >
+      <input type="number" placeholder="Mobile" ng-model="vm.object.phoneno">
+      <input type="text" placeholder="Address" ng-model="vm.object.address">
+    <center><button class="button button-positive" ng-click="vm.order()">
+        Order
+    </button></center>
+  </div>
+  </ion-content>
+</ion-view>

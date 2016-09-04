@@ -1,0 +1,15 @@
+<ion-view view-title="Categories" style="background: url(img/log.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;">
+  <ion-content>
+    <div>
+    <div ng-repeat="category in categories">
+      <div>
+        <img class="full-image" src={{category.image}}>
+        <center><p>{{category.name}}</p></center>
+      </div>
+    </div>
+    </div>
+  </ion-content>
+</ion-view>
